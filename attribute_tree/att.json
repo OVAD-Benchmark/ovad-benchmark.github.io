@@ -1,0 +1,201 @@
+{
+    "name": "OVA",
+    "id": "0",
+    "children": [
+        {
+            "name": "cleanliness",
+            "id": "1",
+            "children": [
+                { "name": "clean/neat/tidy", "id": "1_1" },
+                { "name": "unclean", "id": "1_2" }
+            ]
+        },
+        {
+            "name": "color",
+            "id": "2",
+            "children": [
+                { "name": "orange", "id": "2_1" },
+                { "name": "pink", "id": "2_2" },
+                { "name": "green", "id": "2_3" },
+                { "name": "tan", "id": "2_4" },
+                { "name": "blue", "id": "2_5" },
+                { "name": "gray", "id": "2_6" },
+                { "name": "violet", "id": "2_7" },
+                { "name": "red", "id": "2_8" },
+                { "name": "brown", "id": "2_9" },
+                { "name": "yellow", "id": "2_10" },
+                { "name": "black", "id": "2_11" },
+                { "name": "white", "id": "2_12" }
+            ]
+        },
+        {
+            "name":"pattern",
+            "id": "3",
+            "children": [
+                { "name": "checkered", "id": "3_1" },
+                { "name": "tiled", "id": "3_2" },
+                { "name": "floral", "id": "3_3" },
+                { "name": "plain", "id": "3_4" },
+                { "name": "plaid/tartan", "id": "3_5" },
+                { "name": "striped/lined/pinstriped", "id": "3_6" },
+                { "name": "lettered", "id": "3_7" },
+                { "name": "dotted/speckled/spotted", "id": "3_8" }
+            ]
+        },
+        {
+            "name": "color quantity",
+            "id": "4",
+            "children": [
+                { "name": "single-colored", "id": "4_1" },
+                { "name": "mutli-colored", "id": "4_2" },
+                { "name": "two-colored", "id": "4_3" }
+            ]
+        },
+        {
+            "name": "cooked",
+            "id": "5",
+            "children": [
+                { "name": "raw/fresh", "id": "5_1" },
+                { "name": "cooked/baked/warmed", "id": "5_2" }
+            ]
+        },
+        {
+            "name": "face expression",
+            "id": "6",
+            "children": [
+                { "name": "disgust/frowning", "id": "6_1" },
+                { "name": "fear/surprise", "id": "6_2" },
+                { "name": "sleepy/sleeping", "id": "6_3" },
+                { "name": "happy/smiling/laughing", "id": "6_4" },
+                { "name": "sad/unhappy", "id": "6_5" },
+                { "name": "angry/mad", "id": "6_6" },
+                { "name": "neutral", "id": "6_7" }
+            ]
+        },
+        {
+            "name": "gender",
+            "id": "7",
+            "children": [
+                { "name": "female/woman/girl", "id": "7_1" },
+                { "name": "male/man/guy/boy", "id": "7_2" }
+            ]
+        },
+        {
+            "name": "group",
+            "id": "8",
+            "children": [
+                { "name": "single", "id": "8_1" },
+                { "name": "group", "id": "8_2" }
+            ]
+        },
+        {
+            "name": "length",
+            "id": "9",
+            "children": [
+                { "name": "short", "id": "9_1" },
+                { "name": "long", "id": "9_2" }
+            ]
+        },
+        {
+            "name": "tone",
+            "id": "10",
+            "children": [
+                { "name": "dark/obscure", "id": "10_1" },
+                { "name": "light/bright/shiny", "id": "10_2" }
+            ]
+        },
+        {
+            "name": "hair type",
+            "id": "11",
+            "children": [
+                { "name": "curly/curled", "id": "11_1" },
+                { "name": "straight", "id": "11_2" }
+            ]
+        },
+        {
+            "name": "material",
+            "id": "12",
+            "children": [
+                { "name": "stone", "id": "12_1" },
+                { "name": "construction material", "id": "12_2" },
+                { "name": "glass", "id": "12_3" },
+                { "name": "paper", "id": "12_4" },
+                { "name": "ceramic", "id": "12_5" },
+                { "name": "textile", "id": "12_6" },
+                { "name": "leather", "id": "12_7" },
+                { "name": "wood", "id": "12_8" },
+                { "name": "metalic", "id": "12_9" },
+                { "name": "polymers", "id": "12_10" }
+            ]
+        },
+        {
+            "name": "maturity",
+            "id": "13",
+            "children": [
+                { "name": "baby/kid/child/boy/girl", "id": "13_1" },
+                { "name": "adult/old/aged", "id": "13_2" }
+            ]
+        },
+        {
+            "name": "optical property",
+            "id": "14",
+            "children": [
+                { "name": "opaque", "id": "14_1" },
+                { "name": "transparent/translucent", "id": "14_2" },
+                { "name": "reflective", "id": "14_3" }
+            ]
+        },
+        {
+            "name": "order",
+            "id": "15",
+            "children": [
+                { "name": "ordered/arranged/organized", "id": "15_1" },
+                { "name": "unorganized/cluttered", "id": "15_2" }
+            ]
+        },
+        {
+            "name": "position",
+            "id": "16",
+            "children": [
+                { "name": "horizontal/lying", "id": "16_1" },
+                { "name": "vertical/upright/standing", "id": "16_2" }
+            ]
+        },
+        {
+            "name": "size",
+            "id": "17",
+            "children": [
+                { "name": "big/large/giant/huge", "id": "17_1" },
+                { "name": "small/little/tiny", "id": "17_2" }
+            ]
+        },
+        {
+            "name": "state",
+            "id": "18",
+            "children": [
+                { "name": "empty", "id": "18_1" },
+                { "name": "full/whole", "id": "18_2" },
+                { "name": "on", "id": "18_3" },
+                { "name": "on", "id": "18_4" },
+                { "name": "cracked", "id": "18_5" },
+                { "name": "piece/cut", "id": "18_6" },
+                { "name": "open", "id": "18_7" },
+                { "name": "closed", "id": "18_8" },
+                { "name": "folded", "id": "18_9" },
+                { "name": "dry", "id": "18_10" },
+                { "name": "wet", "id": "18_11" },
+                { "name": "covered", "id": "18_12" },
+                { "name": "dilapidated/ruined/broked", "id": "18_13" }
+            ]
+        },
+        {
+            "name": "texture",
+            "id": "19",
+            "children": [
+                { "name": "tough/hard/rough", "id": "19_1" },
+                { "name": "smooth/sleek", "id": "19_2" },
+                { "name": "soft/furry/hairy", "id": "19_3" }
+            ]
+        }
+    ]
+}

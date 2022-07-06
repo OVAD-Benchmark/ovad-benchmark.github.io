@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Open-vocabulary Attribute Detection</title>
+  <meta property="og:title" content="Open-vocabulary Attribute Detection Benchmark">
+  <meta property="og:type" content="website">
+  <link href="lib/normalize.css" type="text/css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link href="main.css" type="text/css" rel="stylesheet">
+  <script src="//use.typekit.net/ulc1wme.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+  <script>try { Typekit.load(); } catch (e) { }</script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="logo">Open-vocabulary Attribute Detection</h1>
+      <div class="tagline">
+        <a href="https://lmb.informatik.uni-freiburg.de/people/bravoma/" target="_blank" style="color:inherit">Maria A.
+          Bravo</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+        <a href="https://lmb.informatik.uni-freiburg.de/people/mittal/" target="_blank" style="color:inherit">Sudhanshu
+          Mittal</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+        <a href="https://lmb.informatik.uni-freiburg.de/people/gings/" target="_blank" style="color:inherit">Simon
+          Ging</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+        <a href="https://lmb.informatik.uni-freiburg.de/people/brox/" target="_blank" style="color:inherit">Thomas
+          Brox</a><sup>1</sup>&nbsp;&nbsp;&nbsp;<br><br>
+        <sup>1</sup> University of Freiburg&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="cta">
+        <a href="Neurips_2022_paper.pdf" role="button"><i class="fa fa-file-pdf-o"></i> Paper</a>
+        <a href="" role="button"><i class="fa fa-github"></i>
+          Code</a>
+        <a href="neurips22_avad_bib.txt" role="button"><i class="fa fa-quote-right"></i> Bib</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+      <center><img width=1100px alt="" src="images/teaser_dog.png"></center>
+      <p class="long_caption">Fig 1.&nbsp;An example of open-vocabulary attribute detection (OVAD). The objective of
+        OVAD is to
+        detect all objects and visual attributes of each object in the image. All
+        <span style="color:blue">base</span> and <span style="color:red">novel</span> entities are
+        shown in <span style="color:blue">blue</span> and <span style="color:red">red</span> respectively.
+        All attribute classes are novel and used only for evaluation.
+      </p>
+      <h2>Abstract</h2>
+      In this paper, we introduce the <b>Open-vocabulary Attribute Detection</b> task, a new way to learn and predict
+      attributes of detected objects.
+      We leverage vision-language modeling to enable open-vocabulary prediction, where predictions are not bound to a
+      defined vocabulary. Only via a benchmark, we define a target vocabulary, which could be extended at any time. The
+      open-vocabulary setting helps in circumventing the limitation of large annotation costs.
+      To study this problem, we propose the <b>Object-vocabulary Attribute</b> benchmark, which is a clean and densely
+      annotated attribute evaluation benchmark.
+      The proposed benchmark defines 121 attribute classes, including positive and negative attributes, with over 8.6K
+      object instances manually annotated, resulting in a total of 899K attribute annotations. The defined attributes
+      focus on visual adjectives directly attached to the detected objects.
+      We provide a well-performing baseline method for open-vocabulary attribute detection.
+      The introduced task and benchmark would enable the study of fine-grained attribute detection methods in a
+      systematic manner.
+      <br>
+
+      <h2>Dataset</h2>
+      <center><img width=960px alt="" src="res/network_structures.png"></center>
+      <ul class="font-awesome">
+        <li class="checkBullet">1,200 Images</li>
+        <li class="checkBullet">121 Attribute Categories</li>
+        <li class="checkBullet">80 Object Categories</li>
+        <li class="checkBullet">8.6 K Object Instances</li>
+        <li class="checkBullet">899 K Attribute Annotations</li>
+      </ul>
+      <h2>Attribute Hierarchy</h2>
+      <a href="attribute_tree/index.html" target="_blank" style="color:inherit">
+        <center><img width=600px alt="" src="images/att_taxonomy.png"></center>
+      </a>
+      <!-- <div
+        w3-include-html="attribute_tree/6c2b7784ec654b999397b8bc29b84c08-a8021523f399465c01a26678e938bd02da71f6e8/index.html">
+      </div> -->
+      <!-- <div
+        data-include="attribute_tree/6c2b7784ec654b999397b8bc29b84c08-a8021523f399465c01a26678e938bd02da71f6e8/index.html">
+      </div> -->
+      <!-- 
+      <link rel="import"
+        href="attribute_tree/6c2b7784ec654b999397b8bc29b84c08-a8021523f399465c01a26678e938bd02da71f6e8/index.html"> -->
+
+      <h2>Benchmark</h2>
+      <center><img width=800px alt="" src="images/method_comparison.png"></center>
+      <p class="caption">Table 1.&nbsp;mAP on Open-Vocabulary Attribute Detection (OVAD) and AP50 on Open-Vocabulary
+        Detection (OVD-80). Comparing baseline methods across all, head, medium, and tail attributes.</p>
+      <center><img width=800px alt="" src="images/method_comparison_types.png"></center>
+      <p class="caption">Fig. 2.&nbsp;Comparison between different baseline methods on open-vocabulary attribute
+        detection on OVA benchmark. The proposed base method performs best on 18 out of 19 attribute types.</p>
+
+
+      <!-- <h2>Authors</h2>
+      <b>Lifelong Learning via Progressive Distillation and Retrospection.</b> Saihui Hou, Xinyu Pan, Chen Change Loy,
+      Zilei Wang, Dahua Lin. In Proceedings of European Conference on Computer Vision (ECCV), 2018
+      &nbsp;[<a href="http://mmlab.ie.cuhk.edu.hk/projects/lifelong/res/0833.pdf" target="_blank">PDF</a>]
+      &nbsp;[<a href="http://mmlab.ie.cuhk.edu.hk/projects/lifelong/" target="_blank">Project Page</a>]
+      &nbsp;[<a href="https://github.com/hshustc/ECCV18_Lifelong_Learning" target="_blank">Code</a>] -->
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="updated">Updated Junly 2022</div>
+    </div>
+  </div>
+
+  <script>
+        // TODO maybe google analytics
+  </script>
+</body>
+
+</html>
