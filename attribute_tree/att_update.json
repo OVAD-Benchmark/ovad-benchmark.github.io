@@ -7,11 +7,11 @@
             "id": "1",
             "children": [
                 {
-                    "name": "clean/neat/tidy",
+                    "name": "unclean/untidy/dirt",
                     "id": "1_1"
                 },
                 {
-                    "name": "unclean",
+                    "name": "clean/neat/tidy",
                     "id": "1_2"
                 }
             ]
@@ -21,7 +21,7 @@
             "id": "2",
             "children": [
                 {
-                    "name": "orange",
+                    "name": "green",
                     "id": "2_1"
                 },
                 {
@@ -29,15 +29,15 @@
                     "id": "2_2"
                 },
                 {
-                    "name": "green",
+                    "name": "black",
                     "id": "2_3"
                 },
                 {
-                    "name": "tan",
+                    "name": "white",
                     "id": "2_4"
                 },
                 {
-                    "name": "blue",
+                    "name": "brown",
                     "id": "2_5"
                 },
                 {
@@ -45,7 +45,7 @@
                     "id": "2_6"
                 },
                 {
-                    "name": "violet",
+                    "name": "yellow",
                     "id": "2_7"
                 },
                 {
@@ -53,19 +53,19 @@
                     "id": "2_8"
                 },
                 {
-                    "name": "brown",
+                    "name": "tan",
                     "id": "2_9"
                 },
                 {
-                    "name": "yellow",
+                    "name": "violet",
                     "id": "2_10"
                 },
                 {
-                    "name": "black",
+                    "name": "blue",
                     "id": "2_11"
                 },
                 {
-                    "name": "white",
+                    "name": "orange",
                     "id": "2_12"
                 }
             ]
@@ -79,19 +79,19 @@
                     "id": "3_1"
                 },
                 {
-                    "name": "tiled",
+                    "name": "plain",
                     "id": "3_2"
                 },
                 {
-                    "name": "floral",
+                    "name": "plaid/tartan",
                     "id": "3_3"
                 },
                 {
-                    "name": "plain",
+                    "name": "floral",
                     "id": "3_4"
                 },
                 {
-                    "name": "plaid/tartan",
+                    "name": "lettered",
                     "id": "3_5"
                 },
                 {
@@ -99,7 +99,7 @@
                     "id": "3_6"
                 },
                 {
-                    "name": "lettered",
+                    "name": "tiled",
                     "id": "3_7"
                 },
                 {
@@ -113,15 +113,15 @@
             "id": "4",
             "children": [
                 {
-                    "name": "single-colored",
+                    "name": "two-colored",
                     "id": "4_1"
                 },
                 {
-                    "name": "mutli-colored",
+                    "name": "multicolored/colorful",
                     "id": "4_2"
                 },
                 {
-                    "name": "two-colored",
+                    "name": "single-colored/unicolored",
                     "id": "4_3"
                 }
             ]
@@ -145,23 +145,23 @@
             "id": "6",
             "children": [
                 {
-                    "name": "disgust/frowning",
+                    "name": "sleepy/sleeping",
                     "id": "6_1"
                 },
                 {
-                    "name": "fear/surprise",
+                    "name": "disgust/frowning",
                     "id": "6_2"
                 },
                 {
-                    "name": "sleepy/sleeping",
+                    "name": "sad/unhappy",
                     "id": "6_3"
                 },
                 {
-                    "name": "happy/smiling/laughing",
+                    "name": "neutral/calm/serious",
                     "id": "6_4"
                 },
                 {
-                    "name": "sad/unhappy",
+                    "name": "happy/smiling/laughing",
                     "id": "6_5"
                 },
                 {
@@ -169,7 +169,7 @@
                     "id": "6_6"
                 },
                 {
-                    "name": "neutral",
+                    "name": "fear/surprise",
                     "id": "6_7"
                 }
             ]
@@ -183,7 +183,7 @@
                     "id": "7_1"
                 },
                 {
-                    "name": "male/man/guy/boy",
+                    "name": "male/man/guy",
                     "id": "7_2"
                 }
             ]
@@ -193,11 +193,11 @@
             "id": "8",
             "children": [
                 {
-                    "name": "single",
+                    "name": "group",
                     "id": "8_1"
                 },
                 {
-                    "name": "group",
+                    "name": "single",
                     "id": "8_2"
                 }
             ]
@@ -207,12 +207,16 @@
             "id": "9",
             "children": [
                 {
-                    "name": "short",
+                    "name": "long",
                     "id": "9_1"
                 },
                 {
-                    "name": "long",
+                    "name": "short",
                     "id": "9_2"
+                },
+                {
+                    "name": "bald (hair length)",
+                    "id": "9_3"
                 }
             ]
         },
@@ -235,11 +239,11 @@
             "id": "11",
             "children": [
                 {
-                    "name": "curly/curled",
+                    "name": "straight",
                     "id": "11_1"
                 },
                 {
-                    "name": "straight",
+                    "name": "curly/curled",
                     "id": "11_2"
                 }
             ]
@@ -249,43 +253,43 @@
             "id": "12",
             "children": [
                 {
-                    "name": "stone",
+                    "name": "metal/metallic/aluminum",
                     "id": "12_1"
                 },
                 {
-                    "name": "construction material",
+                    "name": "stone/granite/cobblestone",
                     "id": "12_2"
                 },
                 {
-                    "name": "glass",
+                    "name": "ceramic/brick/ceramic",
                     "id": "12_3"
                 },
                 {
-                    "name": "paper",
+                    "name": "polymers/plastic/rubber",
                     "id": "12_4"
                 },
                 {
-                    "name": "ceramic",
+                    "name": "asphalt/cement/clay",
                     "id": "12_5"
                 },
                 {
-                    "name": "textile",
+                    "name": "leather",
                     "id": "12_6"
                 },
                 {
-                    "name": "leather",
+                    "name": "glass",
                     "id": "12_7"
                 },
                 {
-                    "name": "wood",
+                    "name": "wood/wooden/bamboo",
                     "id": "12_8"
                 },
                 {
-                    "name": "metallic",
+                    "name": "textile/cloth/fabric",
                     "id": "12_9"
                 },
                 {
-                    "name": "polymers",
+                    "name": "paper/cardboard",
                     "id": "12_10"
                 }
             ]
@@ -295,11 +299,11 @@
             "id": "13",
             "children": [
                 {
-                    "name": "baby/kid/child/boy/girl",
+                    "name": "adult/old/aged",
                     "id": "13_1"
                 },
                 {
-                    "name": "adult/old/aged",
+                    "name": "young/baby",
                     "id": "13_2"
                 }
             ]
@@ -309,11 +313,11 @@
             "id": "14",
             "children": [
                 {
-                    "name": "opaque",
+                    "name": "transparent/translucent",
                     "id": "14_1"
                 },
                 {
-                    "name": "transparent/translucent",
+                    "name": "opaque",
                     "id": "14_2"
                 },
                 {
@@ -327,11 +331,11 @@
             "id": "15",
             "children": [
                 {
-                    "name": "ordered/arranged/organized",
+                    "name": "messy/disordered/unordered",
                     "id": "15_1"
                 },
                 {
-                    "name": "unorganized/cluttered",
+                    "name": "ordered/arranged/organized",
                     "id": "15_2"
                 }
             ]
@@ -341,12 +345,16 @@
             "id": "16",
             "children": [
                 {
-                    "name": "horizontal/lying",
+                    "name": "vertical/upright/standing",
                     "id": "16_1"
                 },
                 {
-                    "name": "vertical/upright/standing",
+                    "name": "sitting/sit",
                     "id": "16_2"
+                },
+                {
+                    "name": "horizontal/lying",
+                    "id": "16_3"
                 }
             ]
         },
@@ -355,11 +363,11 @@
             "id": "17",
             "children": [
                 {
-                    "name": "big/large/giant/huge",
+                    "name": "small/little/tiny",
                     "id": "17_1"
                 },
                 {
-                    "name": "small/little/tiny",
+                    "name": "big/large/giant",
                     "id": "17_2"
                 }
             ]
@@ -369,15 +377,15 @@
             "id": "18",
             "children": [
                 {
-                    "name": "empty",
+                    "name": "cracked",
                     "id": "18_1"
                 },
                 {
-                    "name": "full/whole",
+                    "name": "closed",
                     "id": "18_2"
                 },
                 {
-                    "name": "on",
+                    "name": "covered",
                     "id": "18_3"
                 },
                 {
@@ -385,39 +393,39 @@
                     "id": "18_4"
                 },
                 {
-                    "name": "cracked",
+                    "name": "open",
                     "id": "18_5"
                 },
                 {
-                    "name": "piece/cut",
+                    "name": "dry",
                     "id": "18_6"
                 },
                 {
-                    "name": "open",
+                    "name": "wet",
                     "id": "18_7"
                 },
                 {
-                    "name": "closed",
+                    "name": "piece/cut",
                     "id": "18_8"
                 },
                 {
-                    "name": "folded",
+                    "name": "empty",
                     "id": "18_9"
                 },
                 {
-                    "name": "dry",
+                    "name": "dilapidated/ruined/broken",
                     "id": "18_10"
                 },
                 {
-                    "name": "wet",
+                    "name": "full/whole",
                     "id": "18_11"
                 },
                 {
-                    "name": "covered",
+                    "name": "folded",
                     "id": "18_12"
                 },
                 {
-                    "name": "dilapidated/ruined/broked",
+                    "name": "off",
                     "id": "18_13"
                 }
             ]
@@ -431,11 +439,11 @@
                     "id": "19_1"
                 },
                 {
-                    "name": "smooth/sleek",
+                    "name": "soft/fluffy/flossy",
                     "id": "19_2"
                 },
                 {
-                    "name": "soft/furry/hairy",
+                    "name": "smooth/sleek",
                     "id": "19_3"
                 }
             ]

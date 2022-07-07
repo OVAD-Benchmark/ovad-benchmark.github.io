@@ -61,6 +61,13 @@ body {
     text-align: center;
 }
 
+.institution {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .tagline em {
     font-weight: 600;
 }
