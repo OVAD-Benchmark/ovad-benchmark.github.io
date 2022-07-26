@@ -1,16 +1,15 @@
 import json
 
-annotation_file = "OVAD_Benchmark/ovad/ovad1200.json"
-attribute_file = "OVAD_Benchmark/ovad/attributes_data.json"
+attribute_file = "ovad/attributes_data.json"
 
 att_dict = {"name": "OVA", "id": "0", "children": []}
 
-data_file = json.load(open(annotation_file, "r"))
+data_file = json.load(open(attribute_file, "r"))
 
 attr2idx = {}
 attr_type = {}
 attr_parent_type = {}
-for att in data_file["attributes"]:
+for att in data_file["att_info_list"]:
     attr2idx[att["name"]] = att["id"]
 
     if att["type"] not in attr_type.keys():
