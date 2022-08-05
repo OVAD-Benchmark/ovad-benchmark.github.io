@@ -1,5 +1,6 @@
 body {
-    font: 16px/1.4 "proxima-nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    /* font: 16px/1.4 "proxima-nova", "Helvetica Neue", Arial, Helvetica, sans-serif; */
+    font: 16px/1.4 "swansearegular", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .container {
