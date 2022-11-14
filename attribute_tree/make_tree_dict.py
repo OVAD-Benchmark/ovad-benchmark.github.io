@@ -2,7 +2,7 @@ import json
 
 attribute_file = "ovad/attributes_data.json"
 
-att_dict = {"name": "OVA", "id": "0", "children": []}
+att_dict = {"name": "OVAD", "id": "0", "children": []}
 
 data_file = json.load(open(attribute_file, "r"))
 
