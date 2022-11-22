@@ -1,4 +1,4 @@
-@InProceedings{Bravo_2022,
+@InProceedings{Bravo_2022_ovad,
 author = {Maria A. Bravo and Sudhanshu Mittal and Simon Ging and Thomas Brox},
 title = {Open-vocabulary Attribute Detection Benchmark},
 booktitle = {openreview},

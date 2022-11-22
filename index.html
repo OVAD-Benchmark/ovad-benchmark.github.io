@@ -36,14 +36,14 @@
       </div>
       <div class="cta">
         <a href="https://openreview.net/pdf?id=4W2UaAZBKK" role="button"><i class="fa fa-file-pdf-o"></i> Paper</a>
-        <a href="https://openreview.net/attachment?id=4W2UaAZBKK&name=supplementary_material" role="button"><i
-            class="fa fa-file-pdf-o"></i> Supplementary</a>
+        <!-- <a href="https://openreview.net/attachment?id=4W2UaAZBKK&name=supplementary_material" role="button"><i
+            class="fa fa-file-pdf-o"></i> Supplementary</a> -->
         <!-- <a href="https://github.com/OVAD-Benchmark/ovad-api" role="button"><i class="fa fa-file-pdf-o"></i>
           Annotations</a> -->
-        <a href="https://lmb.informatik.uni-freiburg.de/resources/datasets/ovad/" role="button"><i
+        <a href="https://lmb.informatik.uni-freiburg.de/resources/datasets/ovad2000/" role="button"><i
             class="fa fa-file-pdf-o"></i> Visualizer</a>
         <!-- <a href="" role="button"><i class="fa fa-github"></i> Code</a> -->
-        <a href="open_review_avad_bib.txt" role="button"><i class="fa fa-quote-right"></i> Bib</a>
+        <a href="open_review_ovad_bib.txt" role="button"><i class="fa fa-quote-right"></i> Bib</a>
       </div>
     </div>
   </div>
@@ -51,40 +51,40 @@
   <div class="main">
     <div class="container">
       <center><img width=900px alt="" src="images/teaser_dog.png"></center>
-      <p class="long_caption">Fig 1.&nbsp;An example of open-vocabulary attribute detection (OVAD). The objective of
-        OVAD is to
-        detect all objects and visual attributes of each object in the image. All
+      <p class="long_caption">An example of open-vocabulary attribute detection (OVAD). The objective of
+        OVAD is to detect all objects and visual attributes of each object in the image. All
         <span style="color:blue">base</span> and <span style="color:red">novel</span> entities are
         shown in <span style="color:blue">blue</span> and <span style="color:red">red</span> respectively.
         All attribute classes are novel and used only for evaluation.
       </p>
       <h2>Abstract</h2>
-      In this paper, we introduce the <b>Open-vocabulary Attribute Detection</b> task, a new way to learn and predict
-      attributes of detected objects.
-      We leverage vision-language modeling to enable open-vocabulary prediction, where predictions are not bound to a
-      defined vocabulary. Only via a benchmark, we define a target vocabulary, which could be extended at any time. The
-      open-vocabulary setting helps in circumventing the limitation of large annotation costs.
-      To study this problem, we propose the <b>Object-vocabulary Attribute</b> benchmark, which is a clean and densely
-      annotated attribute evaluation benchmark.
-      The proposed benchmark defines 121 attribute classes, including positive and negative attributes, with over 8.6K
-      object instances manually annotated, resulting in a total of 899K attribute annotations. The defined attributes
-      focus on visual adjectives directly attached to the detected objects.
-      We provide a well-performing baseline method for open-vocabulary attribute detection.
-      The introduced task and benchmark would enable the study of fine-grained attribute detection methods in a
-      systematic manner.
+      Vision-language modeling has enabled open-vocabulary tasks where predictions can be queried using any text prompt
+      in a zero-shot manner. Existing open-vocabulary tasks focus on object classes, whereas research on object
+      attributes is limited due to the lack of a reliable attribute-focused evaluation benchmark. This paper introduces
+      the <b>Open-Vocabulary Attribute Detection</b> (<b>OVAD</b>) task and the corresponding OVAD benchmark. The
+      objective of the novel task and benchmark is to probe object-level attribute information learned by
+      vision-language models. To this end, we created a clean and densely annotated test set covering 117 attribute
+      classes on the 80 object classes of MS COCO. It includes positive and negative annotations, which enables
+      open-vocabulary evaluation. Overall, the benchmark consists of 1.4 million annotations. For reference, we provide
+      a first baseline method for open-vocabulary attribute detection. Moreover, we demonstrate the benchmark's value by
+      studying the attribute detection performance of several foundation models.
       <br>
 
       <h2>Dataset</h2>
-      <p>Download data annotation kit and annotations.<a href="https://lmb.informatik.uni-freiburg.de/resources/datasets/ovad.zip" > link </a></p>
-      <center><img width=960px alt="" src="res/network_structures.png"></center>
+      <p>Download data annotation kit and annotations.<a
+          href="https://lmb.informatik.uni-freiburg.de/resources/datasets/ovad.zip"> link </a></p>
+      <!-- <center><img width=960px alt="" src="res/network_structures.png"></center> -->
+      <p>On average, the OVAD benchmark has 98 attribute annotations per object instance, with 7.2 objects per image,
+        for a total of 1.4 million attribute annotations, making it <b>the most densely annotated object-level attribute
+          test dataset.</b> </p>
       <ul class="font-awesome">
-        <li class="checkBullet">1,200 Images</li>
+        <li class="checkBullet">2,000 Test Images</li>
         <li class="checkBullet">117 Attribute Categories</li>
         <li class="checkBullet">80 Object Categories</li>
-        <li class="checkBullet">8.6 k Object Instances</li>
-        <!-- <li class="checkBullet">899 k Attribute Annotations</li> -->
+        <li class="checkBullet">14.3 K Object Instances</li>
+        <li class="checkBullet">1.4 M Attribute Annotations</li>
       </ul>
-      <h2>Attribute Hierarchy</h2>
+      <h3>Attribute Hierarchy</h3>
       <a href="attribute_tree/index.html" target="_blank" style="color:inherit">
         <center><img width=600px alt="" src="images/att_taxonomy.png"></center>
       </a>
@@ -97,14 +97,25 @@
       <!-- 
       <link rel="import"
         href="attribute_tree/6c2b7784ec654b999397b8bc29b84c08-a8021523f399465c01a26678e938bd02da71f6e8/index.html"> -->
+      <h3>Attribute Distribution</h3>
+      <center><img width=1000px alt="" src="images/attribute_distribution.png"></center>
+      <p>Attribute frequency distribution in the OVAD benchmark. Bar colors correspond to
+        the frequency-defined subsets head, medium and tail.
+      </p>
 
       <h2>Benchmark</h2>
-      <center><img width=800px alt="" src="images/method_comparison.png"></center>
+      <center><img width=700px alt="" src="images/ovad_sota.png"></center>
       <p class="caption">Table 1.&nbsp;mAP on Open-Vocabulary Attribute Detection (OVAD) and AP50 on Open-Vocabulary
         Detection (OVD-80). Comparing baseline methods across all, head, medium, and tail attributes.</p>
-      <center><img width=800px alt="" src="images/method_comparison_types.png"></center>
-      <p class="caption">Fig. 2.&nbsp;Comparison between different baseline methods on open-vocabulary attribute
-        detection on OVAD benchmark. The proposed base method performs best on 18 out of 19 attribute types.</p>
+      <center><img width=1000px alt="" src="images/ovad_box_sota.png"></center>
+      <p class="caption">Table 2.&nbsp;Open-vocabulary Attribute Detection results (mAP) for foundation models in
+        the box-oracle setup (OVAD-Box). * The model uses the localization information
+        in the annotations of this dataset. + ft: final fine-tuning pass on the captions of this
+        dataset. Right-side table details the training datasets.
+      </p>
+      <!-- <center><img width=800px alt="" src="images/method_comparison_types.png"></center>
+      <p class="caption">&nbsp;Comparison between different baseline methods on open-vocabulary attribute
+        detection on OVAD benchmark. The proposed base method performs best on 18 out of 19 attribute types.</p> -->
 
 
       <h2>Examples</h2>
@@ -130,19 +141,20 @@
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License"
             style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />The OVAD
         benchmark, annotations along with this website are licensed under a <a rel="license"
-          href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+          href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike
+          4.0
           International License</a>.
-    
-        All OVA dataset images come from the COCO dataset; please see 
-        <a href="https://cocodataset.org/#termsofuse" > link </a> for their terms of use.
+
+        All OVA dataset images come from the COCO dataset; please see
+        <a href="https://cocodataset.org/#termsofuse"> link </a> for their terms of use.
       </p>
-    
+
     </div>
   </div>
 
   <div class="footer">
     <div class="container">
-      <div class="updated">Updated August 2022</div>
+      <div class="updated">Updated November 2022</div>
     </div>
   </div>
 
