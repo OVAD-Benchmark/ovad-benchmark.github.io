@@ -1,0 +1,8 @@
+@article{Bravo_2022_ovad,
+author = {Maria A. Bravo and Sudhanshu Mittal and Simon Ging and Thomas Brox},
+title = {Open-vocabulary Attribute Detection},
+journal = {arXiv preprint arXiv:2211.12914},
+url = {https://arxiv.org/abs/2211.12914},
+doi = {10.48550/ARXIV.2211.12914},
+year = {2022}
+}
