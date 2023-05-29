@@ -1,4 +1,4 @@
-@InProceedings{Bravo_2022_ovad,
+@InProceedings{Bravo_2023_ovad,
   author       = "M. Bravo and S. Mittal and S. Ging and T. Brox",
   title        = "Open-vocabulary Attribute Detection",
   booktitle    = "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
