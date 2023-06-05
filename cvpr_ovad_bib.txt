@@ -1,8 +1,8 @@
-@InProceedings{Bravo_2023_ovad,
-  author       = "M. Bravo and S. Mittal and S. Ging and T. Brox",
-  title        = "Open-vocabulary Attribute Detection",
-  booktitle    = "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
-  month        = "Jun",
-  year         = "2023",
-  url          = "http://lmb.informatik.uni-freiburg.de/Publications/2023/BMGB23"
+@InProceedings{Bravo_2023_CVPR,
+    author    = {Bravo, Mar{\'\i}a A. and Mittal, Sudhanshu and Ging, Simon and Brox, Thomas},
+    title     = {Open-Vocabulary Attribute Detection},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {7041-7050}
 }
